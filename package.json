@@ -4,10 +4,8 @@
   "description": "army tiger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "army-tiger": "index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "refresh": "node index.js"
   },
   "repository": {
     "type": "git",

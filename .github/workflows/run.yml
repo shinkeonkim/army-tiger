@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npx army-tiger
+      - run: npm run refresh
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
           START_AT: 2022-11-28
