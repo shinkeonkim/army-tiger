@@ -2,10 +2,10 @@
   "name": "army-tiger",
   "version": "1.0.0",
   "description": "army tiger",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "refresh": "node index.js"
+    "refresh": "node ./index.js"
   },
   "repository": {
     "type": "git",
