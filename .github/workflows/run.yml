@@ -1,0 +1,21 @@
+
+name: Update Github Stats Gist
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches: master
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npx army-tiger
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
+          START_AT: 2022-11-28
+          END_AT: 2024-05-26
+          GIST_ID: 5a61214fe052be0e3ecf9654ef7274f6 # The ID portion from your gist url
