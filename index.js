@@ -105,7 +105,7 @@ const getPercent = () => {
 const getPercentString = () => {
   const percent = getPercent();
   const cnt = parseInt(percent / 10)
-  return `🚩 ${percent}% : ` + Array(cnt).fill('█').join('') + Array(10 - cnt).fill('░░').join('')
+  return `🚩 ${percent}% : ` + Array(cnt).fill('██').join('') + Array(10 - cnt).fill('░░').join('')
 }
 
 const updateGist = async () => {
