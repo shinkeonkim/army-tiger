@@ -95,6 +95,19 @@ const getUsername = async () => {
   return user.name || user.login;
 }
 
+const getPercent = () => {
+  if(isPreviousEnlistment()) return 0;
+  if(isDischargedFromArmyToday()) return 100;
+
+  return parseInt((now - startAt) / (endAt - startAt) * 100);
+}
+
+const getPercentString = () => {
+  const percent = getPercent();
+  const cnt = parseInt(percent / 10)
+  return `🚩 ${percent}% : ` + Array(cnt).fill('█').join('') + Array(10 - cnt).fill('░░').join('')
+}
+
 const updateGist = async () => {
   const username = await getUsername();
   const now = getToday();
@@ -121,6 +134,7 @@ const updateGist = async () => {
     msg,
     `🗓 입대일: ${START_AT}`,
     `🗓 전역일: ${END_AT}`,
+    getPercentString(),
   ].join('\n') + '\n';
 
   console.log(gistContent);
