@@ -1,5 +1,5 @@
 
-name: Update Github Stats Gist
+name: Update Army Tiger
 on:
   workflow_dispatch:
   schedule:
