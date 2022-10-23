@@ -10,11 +10,16 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
-      - run: npm run refresh
+      - name: Install dependencies
+        run: npm install
+        working-directory: army-tiger/army-tiger
+      - name: Refresh
+        run: npm run refresh
+        working-directory: army-tiger/army-tiger
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
           START_AT: 2022-11-28
