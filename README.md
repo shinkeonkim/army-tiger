@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://gist.github.com/shinkeonkim/5a61214fe052be0e3ecf9654ef7274f6">
-    <img src="https://user-images.githubusercontent.com/47373998/197396255-5478623e-bfab-450f-be29-a109f8e75b0e.png">
+    <img src="https://user-images.githubusercontent.com/47373998/197399629-7be83381-67cb-4af6-bb6e-c22620409808.png" width="50%">
   </a>
   <h3 align="center">Army Tiger</h3>
-  <p align="center">⚡️📌 군대 일정을 Github 프로필에 남겨둘 수 있어요</p>
+  <p align="center"> 🪖 군대 일정을 Github 프로필에 남겨둘 수 있어요</p>
 </p>
 
 ---
